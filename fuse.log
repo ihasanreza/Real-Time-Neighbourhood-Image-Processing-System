@@ -1,0 +1,39 @@
+Running: E:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o E:/Usman/VLSI-CEP/MainModuleTest_isim_beh.exe -prj E:/Usman/VLSI-CEP/MainModuleTest_beh.prj work.MainModuleTest work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "E:/Usman/VLSI-CEP/ipcore_dir/clock.v" into library work
+Analyzing Verilog file "E:/Usman/VLSI-CEP/clockGenerator.v" into library work
+Analyzing Verilog file "E:/Usman/VLSI-CEP/SteerModule.v" into library work
+Analyzing Verilog file "E:/Usman/VLSI-CEP/ipcore_dir/BRAM.v" into library work
+Analyzing Verilog file "E:/Usman/VLSI-CEP/ControlModule.v" into library work
+Analyzing Verilog file "E:/Usman/VLSI-CEP/AddressGeneratorModule.v" into library work
+Analyzing Verilog file "E:/Usman/VLSI-CEP/MainModule.v" into library work
+Analyzing Verilog file "E:/Usman/VLSI-CEP/MainModuleTest.v" into library work
+Analyzing Verilog file "E:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module IBUFG
+Compiling module MMCME2_ADV(CLKOUT1_DIVIDE=10,CLK...
+Compiling module BUFG
+Compiling module clock
+Compiling module clockGenerator
+Compiling module ControlModule
+Compiling module AddressGeneratorModule
+Compiling module BLK_MEM_GEN_V7_3_output_stage(C_...
+Compiling module BLK_MEM_GEN_V7_3_output_stage(C_...
+Compiling module BLK_MEM_GEN_V7_3_softecc_output_...
+Compiling module BLK_MEM_GEN_V7_3_mem_module(C_CO...
+Compiling module BLK_MEM_GEN_V7_3(C_FAMILY="artix...
+Compiling module BRAM
+Compiling module SteerModule
+Compiling module MainModule
+Compiling module MainModuleTest
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 7 sub-compilation(s) to finish...
+Compiled 17 Verilog Units
+Built simulation executable E:/Usman/VLSI-CEP/MainModuleTest_isim_beh.exe
+Fuse Memory Usage: 44688 KB
+Fuse CPU Usage: 1029 ms

@@ -1,0 +1,20 @@
+
+
+
+// Instantiate the module
+ControlModule instance_name (
+    .mainClk(mainClk), 
+    .start(start), 
+    .enable(enable), 
+    .resetWr(resetWr), 
+    .resetRd(resetRd), 
+    .enRd(enRd), 
+    .enWr(enWr), 
+    .sel(sel), 
+    .enSm(enSm), 
+    .imageProcessed(imageProcessed), 
+    .writeClk(writeClk), 
+    .readClk(readClk)
+    );
+
+

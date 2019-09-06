@@ -1,0 +1,7 @@
+verilog work "ipcore_dir/clock.v"
+verilog work "clockGenerator.v"
+verilog work "SteerModule.v"
+verilog work "ipcore_dir/BRAM.v"
+verilog work "ControlModule.v"
+verilog work "AddressGeneratorModule.v"
+verilog work "MainModule.v"

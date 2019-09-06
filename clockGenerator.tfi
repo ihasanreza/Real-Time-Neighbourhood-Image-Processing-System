@@ -1,0 +1,12 @@
+
+
+
+// Instantiate the module
+clockGenerator instance_name (
+    .mainClk(mainClk), 
+    .writeClk(writeClk), 
+    .readClk(readClk), 
+    .locked(locked)
+    );
+
+

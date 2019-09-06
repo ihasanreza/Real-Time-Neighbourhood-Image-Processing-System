@@ -1,0 +1,7 @@
+xst -intstyle ise -ifn "E:/Usman/VLSI-CEP/ControlModule.xst" -ofn "E:/Usman/VLSI-CEP/ControlModule.syr" 
+xst -intstyle ise -ifn "E:/Usman/VLSI-CEP/ControlModule.xst" -ofn "E:/Usman/VLSI-CEP/ControlModule.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc7a100t-csg324-3 ControlModule.ngc ControlModule.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o ControlModule_map.ncd ControlModule.ngd ControlModule.pcf 
+par -w -intstyle ise -ol high -mt off ControlModule_map.ncd ControlModule.ncd ControlModule.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml ControlModule.twx ControlModule.ncd -o ControlModule.twr ControlModule.pcf 
+vhdtdtfi -lang verilog -prj VLSI-CEP -o E:/Usman/VLSI-CEP/ControlModule.tfi -lib work E:/Usman/VLSI-CEP//ControlModule.v -module ControlModule -template E:/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 

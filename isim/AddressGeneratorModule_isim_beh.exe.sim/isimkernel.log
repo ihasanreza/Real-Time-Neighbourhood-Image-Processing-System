@@ -1,0 +1,28 @@
+Command line:
+   AddressGeneratorModule_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  51217
+
+Wed Jul 10 03:07:12 2019
+
+
+ Elaboration Time: 0.078001 sec
+
+ Current Memory Usage: 671.785 Meg
+
+ Total Signals          : 19
+ Total Nets             : 39
+ Total Signal Drivers   : 7
+ Total Blocks           : 2
+ Total Primitive Blocks : 2
+ Total Processes        : 10
+ Total Traceable Variables  : 20
+ Total Scalar Nets and Variables : 139
+
+ Total Simulation Time: 0.093601 sec
+
+ Current Memory Usage: 671.785 Meg
+
+Wed Jul 10 03:07:19 2019
+

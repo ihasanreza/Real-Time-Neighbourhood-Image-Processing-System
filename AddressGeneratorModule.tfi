@@ -1,0 +1,16 @@
+
+
+
+// Instantiate the module
+AddressGeneratorModule instance_name (
+    .enRd(enRd), 
+    .enWr(enWr), 
+    .resetRd(resetRd), 
+    .resetWr(resetWr), 
+    .readClk(readClk), 
+    .writeClk(writeClk), 
+    .writeAddress(writeAddress), 
+    .readAddress(readAddress)
+    );
+
+

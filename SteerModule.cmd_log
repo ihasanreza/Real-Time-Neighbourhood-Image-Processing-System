@@ -1,0 +1,2 @@
+vhdtdtfi -lang verilog -prj VLSI-CEP -o E:/Usman/VLSI-CEP/SteerModule.tfi -lib work E:/Usman/VLSI-CEP//SteerModule.v -module SteerModule -template E:/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 
+vhdtdtfi -lang verilog -prj VLSI-CEP -o E:/Usman/VLSI-CEP/SteerModule.tfi -lib work E:/Usman/VLSI-CEP//SteerModule.v -module SteerModule -template E:/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 

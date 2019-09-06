@@ -1,0 +1,2 @@
+verilog work "netgen/par/MainModule_timesim.v"
+verilog work "MainModuleTest.v"

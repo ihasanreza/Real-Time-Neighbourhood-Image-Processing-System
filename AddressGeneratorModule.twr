@@ -1,0 +1,112 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+E:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+-n 3 -fastpaths -xml AddressGeneratorModule.twx AddressGeneratorModule.ncd -o
+AddressGeneratorModule.twr AddressGeneratorModule.pcf
+
+Design file:              AddressGeneratorModule.ncd
+Physical constraint file: AddressGeneratorModule.pcf
+Device,package,speed:     xc7a100t,csg324,C,-3 (PRODUCTION 1.10 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock readClk
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+resetRd     |   -0.315(R)|      FAST  |    2.302(R)|      SLOW  |readClk_BUFGP     |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Setup/Hold to clock writeClk
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+resetWr     |   -0.369(R)|      FAST  |    2.438(R)|      SLOW  |writeClk_BUFGP    |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Clock readClk to Pad
+--------------+-----------------+------------+-----------------+------------+------------------+--------+
+              |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination   |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+--------------+-----------------+------------+-----------------+------------+------------------+--------+
+readAddress<0>|         7.534(R)|      SLOW  |         3.102(R)|      FAST  |readClk_BUFGP     |   0.000|
+readAddress<1>|         7.671(R)|      SLOW  |         3.169(R)|      FAST  |readClk_BUFGP     |   0.000|
+readAddress<2>|         7.528(R)|      SLOW  |         3.087(R)|      FAST  |readClk_BUFGP     |   0.000|
+readAddress<3>|         7.547(R)|      SLOW  |         3.108(R)|      FAST  |readClk_BUFGP     |   0.000|
+readAddress<4>|         7.642(R)|      SLOW  |         3.148(R)|      FAST  |readClk_BUFGP     |   0.000|
+readAddress<5>|         7.528(R)|      SLOW  |         3.103(R)|      FAST  |readClk_BUFGP     |   0.000|
+readAddress<6>|         7.674(R)|      SLOW  |         3.178(R)|      FAST  |readClk_BUFGP     |   0.000|
+readAddress<7>|         7.682(R)|      SLOW  |         3.185(R)|      FAST  |readClk_BUFGP     |   0.000|
+readAddress<8>|         7.545(R)|      SLOW  |         3.105(R)|      FAST  |readClk_BUFGP     |   0.000|
+--------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock writeClk to Pad
+----------------+-----------------+------------+-----------------+------------+------------------+--------+
+                |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination     |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+----------------+-----------------+------------+-----------------+------------+------------------+--------+
+writeAddress<0> |         7.759(R)|      SLOW  |         3.257(R)|      FAST  |writeClk_BUFGP    |   0.000|
+writeAddress<1> |         7.678(R)|      SLOW  |         3.196(R)|      FAST  |writeClk_BUFGP    |   0.000|
+writeAddress<2> |         7.734(R)|      SLOW  |         3.237(R)|      FAST  |writeClk_BUFGP    |   0.000|
+writeAddress<3> |         7.619(R)|      SLOW  |         3.166(R)|      FAST  |writeClk_BUFGP    |   0.000|
+writeAddress<4> |         7.504(R)|      SLOW  |         3.093(R)|      FAST  |writeClk_BUFGP    |   0.000|
+writeAddress<5> |         7.707(R)|      SLOW  |         3.196(R)|      FAST  |writeClk_BUFGP    |   0.000|
+writeAddress<6> |         7.582(R)|      SLOW  |         3.146(R)|      FAST  |writeClk_BUFGP    |   0.000|
+writeAddress<7> |         7.641(R)|      SLOW  |         3.186(R)|      FAST  |writeClk_BUFGP    |   0.000|
+writeAddress<8> |         7.689(R)|      SLOW  |         3.194(R)|      FAST  |writeClk_BUFGP    |   0.000|
+writeAddress<9> |         7.678(R)|      SLOW  |         3.174(R)|      FAST  |writeClk_BUFGP    |   0.000|
+writeAddress<10>|         7.648(R)|      SLOW  |         3.176(R)|      FAST  |writeClk_BUFGP    |   0.000|
+----------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock readClk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+readClk        |    1.439|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock writeClk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+writeClk       |    2.269|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Analysis completed Tue Jul 09 20:28:50 2019 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 610 MB
+
+
+

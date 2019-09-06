@@ -1,0 +1,86 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+E:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+-n 3 -fastpaths -xml ControlModule.twx ControlModule.ncd -o ControlModule.twr
+ControlModule.pcf
+
+Design file:              ControlModule.ncd
+Physical constraint file: ControlModule.pcf
+Device,package,speed:     xc7a100t,csg324,C,-3 (PRODUCTION 1.10 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock mainClk
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+start       |    4.660(R)|      SLOW  |   -1.878(R)|      FAST  |writeClk_OBUF     |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Clock mainClk to Pad
+--------------+-----------------+------------+-----------------+------------+------------------+--------+
+              |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination   |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+--------------+-----------------+------------+-----------------+------------+------------------+--------+
+enRd          |         4.001(R)|      SLOW  |         1.663(R)|      FAST  |writeClk_OBUF     |   0.000|
+enSm          |         3.894(R)|      SLOW  |         1.618(R)|      FAST  |writeClk_OBUF     |   0.000|
+enWr          |         3.567(R)|      SLOW  |         1.399(R)|      FAST  |writeClk_OBUF     |   0.000|
+imageProcessed|         3.610(R)|      SLOW  |         1.452(R)|      FAST  |writeClk_OBUF     |   0.000|
+resetRd       |         4.441(R)|      SLOW  |         1.757(R)|      FAST  |readClk_OBUF      |   0.000|
+resetWr       |         3.554(R)|      SLOW  |         1.375(R)|      FAST  |writeClk_OBUF     |   0.000|
+sel<0>        |         3.604(R)|      SLOW  |         1.436(R)|      FAST  |writeClk_OBUF     |   0.000|
+sel<1>        |         3.543(R)|      SLOW  |         1.398(R)|      FAST  |writeClk_OBUF     |   0.000|
+sel<2>        |         3.655(R)|      SLOW  |         1.387(R)|      FAST  |writeClk_OBUF     |   0.000|
+--------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock mainClk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+mainClk        |    2.216|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+mainClk        |readClk        |    4.097|
+mainClk        |writeClk       |    2.297|
+---------------+---------------+---------+
+
+
+Analysis completed Tue Jul 09 21:40:32 2019 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 615 MB
+
+
+
